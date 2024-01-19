@@ -12,7 +12,7 @@ import (
 var dataBase *gorm.DB
 
 func ConntectDataBase() {
-	dns := "sqlserver://amir:1G14ijWA@localhost:1433?database=Go_DB"
+	dns := "sqlserver://amir:********@localhost:1433?database=Go_DB"
 	db, err := gorm.Open(sqlserver.Open(dns), &gorm.Config{})
 	if err != nil {
 		panic("Faild to connect to sqlserver")
